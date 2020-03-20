@@ -34,7 +34,7 @@ app.use(cors());//解决跨域
 app.use(bodyParser.json());//json请求
 app.use(bodyParser.urlencoded({extended:false}));//表单请求
 function Result(obj={}){//统一的返回数据
-    let {code=1,msg='',data={}}=obj;
+    let {code=200,msg='',data={}}=obj;
     this.code=code;
     this.msg=msg;
     this.data=data;
